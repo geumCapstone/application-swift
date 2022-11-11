@@ -1,19 +1,15 @@
-//
-//  ViewController.swift
-//  Geumjjok
-//
-//  Created by 최영현 on 2022/09/27.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var menuButton1: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    
+    
 }
 

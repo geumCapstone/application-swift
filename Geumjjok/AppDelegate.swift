@@ -13,7 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        /** sleep 이용하여 didFinishLaunchingWithOptions 지연시킴, 로딩시간 3초 */
+        sleep(3)
         return true
     }
 
