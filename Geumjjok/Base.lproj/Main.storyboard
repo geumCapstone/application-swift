@@ -16,15 +16,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVU-zD-05P">
-                                <rect key="frame" x="16" y="711" width="90" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8D0-yG-lDH">
+                                <rect key="frame" x="0.0" y="735" width="390" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVU-zD-05P">
+                                        <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="75"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTQ-YQ-sHe">
+                                        <rect key="frame" x="97.666666666666686" y="0.0" width="97.333333333333314" height="75"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRq-XQ-dBu">
+                                        <rect key="frame" x="195" y="0.0" width="97.666666666666686" height="75"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahk-Iz-quW">
+                                        <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="75"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="veH-am-LEh"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8D0-yG-lDH" secondAttribute="bottom" id="5xl-fM-lQP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8D0-yG-lDH" secondAttribute="trailing" id="7di-TN-G2o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8D0-yG-lDH" secondAttribute="bottom" id="8Vb-LI-mnz"/>
+                            <constraint firstItem="8D0-yG-lDH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CjM-ba-dae"/>
+                            <constraint firstItem="8D0-yG-lDH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lyy-dV-a8C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8D0-yG-lDH" secondAttribute="bottom" id="S4X-f8-h7i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8D0-yG-lDH" secondAttribute="bottom" id="SVi-Zb-o0n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8D0-yG-lDH" secondAttribute="trailing" id="T8Y-xx-Tbx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8D0-yG-lDH" secondAttribute="trailing" id="cMA-Kb-91K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8D0-yG-lDH" secondAttribute="trailing" id="ctR-vP-3jk"/>
+                            <constraint firstItem="8D0-yG-lDH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h2B-0i-Bec"/>
+                            <constraint firstItem="8D0-yG-lDH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wKY-wd-lCB"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="menuButton1" destination="vVU-zD-05P" id="bCr-Vf-HFa"/>
