@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "APPLICATION_LOADING 2.png",
+      "filename" : "APPLICATION_LOADING.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "APPLICATION_LOADING 1.png",
+      "filename" : "APPLICATION_LOADING 1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "APPLICATION_LOADING.png",
+      "filename" : "APPLICATION_LOADING 2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

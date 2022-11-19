@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DA2FBD829290E34005AE000 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2FBD729290E34005AE000 /* MainViewController.swift */; };
 		0DA9E11B28E30EBB00F78F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9E11A28E30EBB00F78F75 /* AppDelegate.swift */; };
 		0DA9E11D28E30EBB00F78F75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9E11C28E30EBB00F78F75 /* SceneDelegate.swift */; };
 		0DA9E11F28E30EBB00F78F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9E11E28E30EBB00F78F75 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DA2FBD729290E34005AE000 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0DA9E11728E30EBB00F78F75 /* Geumjjok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geumjjok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA9E11A28E30EBB00F78F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DA9E11C28E30EBB00F78F75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		0DA9E11928E30EBB00F78F75 /* Geumjjok */ = {
 			isa = PBXGroup;
 			children = (
+				0DBC1800291FAE4B00E1AB5C /* ViewControllers */,
 				0DA9E11A28E30EBB00F78F75 /* AppDelegate.swift */,
 				0DA9E11C28E30EBB00F78F75 /* SceneDelegate.swift */,
 				0DA9E11E28E30EBB00F78F75 /* ViewController.swift */,
@@ -72,6 +75,14 @@
 				0DA9E12828E30EBC00F78F75 /* Info.plist */,
 			);
 			path = Geumjjok;
+			sourceTree = "<group>";
+		};
+		0DBC1800291FAE4B00E1AB5C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DA2FBD729290E34005AE000 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		7480784FCDF178C37DA5090A /* Frameworks */ = {
@@ -88,7 +99,6 @@
 				D22441AD39BE618E7403ED61 /* Pods-Geumjjok.debug.xcconfig */,
 				A3D8280E6430B67C9E236AD7 /* Pods-Geumjjok.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,6 +220,7 @@
 				0DA9E11F28E30EBB00F78F75 /* ViewController.swift in Sources */,
 				0DA9E11B28E30EBB00F78F75 /* AppDelegate.swift in Sources */,
 				0DA9E11D28E30EBB00F78F75 /* SceneDelegate.swift in Sources */,
+				0DA2FBD829290E34005AE000 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
