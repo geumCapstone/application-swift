@@ -1,11 +1,5 @@
-//
-//  AppDelegate.swift
-//  Geumjjok
-//
-//  Created by 최영현 on 2022/09/27.
-//
-
 import UIKit
+import NaverThirdPartyLogin
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +7,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let instance = NaverThirdPartyLoginConnection.getSharedInstance()
+        
+        // 네이버 앱 사용 인증 활성화
+        instance?.isNaverAppOauthEnable = true
+        
+        // SafariViewController에서 인증 활성화
+        instance?.isInAppOauthEnable = true
+        
+        // 세로화면 인증 활성화(세로화면에서만 가능하게끔 설정)
+        instance?.isOnlyPortraitSupportedInIphone()
+        
+        instance?.serviceUrlScheme = kServiceAppUrlScheme // 네이버에 등록한 UrlScheme
+        instance?.consumerKey = kConsumerKey // ClientId
+        instance?.consumerSecret = kConsumerSecret // PW
+        instance?.appName = kServiceAppName // APPLICATION NAME
+        
+        
+        /** sleep 이용하여 didFinishLaunchingWithOptions 지연시킴, 로딩시간 3초 */
+        sleep(3)
+
         return true
     }
 
